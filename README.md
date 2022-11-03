@@ -6,10 +6,10 @@ Cybersecurity AI Chatbot
 
 Developed by: 
 
-Aaron Donnellan 
-Guandong Li
-Hassan Mohamed
-Vincent Cheuk
+\nAaron Donnellan 
+\nGuandong Li
+\nHassan Mohamed
+\nVincent Cheuk
 
 
 
