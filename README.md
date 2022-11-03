@@ -6,10 +6,7 @@ Cybersecurity AI Chatbot
 
 Developed by: 
 
-Aaron Donnellan 
-Guandong Li
-Hassan Mohamed
-Vincent Cheuk
+Aaron Donnellan, Guandong Li, Hassan Mohamed, and Vincent Cheuk
 
 
 
