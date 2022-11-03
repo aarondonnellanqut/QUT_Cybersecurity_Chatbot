@@ -1,0 +1,393 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Hey"
+      ],
+      "responses": [
+        "Hello, thanks for chatting with me",
+        "Good to see you again",
+        "Hi there, how can I help?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Seya", "Laters"],
+      "responses": [
+        "See you later, thanks for chatting with me",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "ddos",
+      "patterns": ["I cant connect to the internet", "My Network is slow", " my computer becomes sluggish", "how do i protect my origin server"],
+      "responses": [
+        "Contact your internet service provider, CDN or DDoS provider to get assistance.",
+        "Initiate your incident response plan",
+        "Never respond to extortion emails, even to refuse payment.",
+        "Regularly apply IT security patches to your website.",
+        "Consider mirroring part or all of your DNS infrastructure with DDoS resilient DNS providers.",
+        "Harden DNS servers against DDoS attacks.",
+        "Use a CDN or DDoS mitigation provider to front your online services."
+      ],
+      "cost": 4500,
+      "priority": "High" 
+    },
+    {
+      "tag": "data",
+      "patterns": ["my account has unusual account activity", "how do i not have data breaches", "what is the best way to avoid data breaches", "All my data has been deleted"],
+      "responses": [
+        "Use multi-factor authentication for critical services, such as your online tax return or even email.",
+        "Back up important information.",
+        "Avoid re-using password.",
+        "Minimise the amount of personal information shared with an organisation.",
+        "Look for organisations that have a commitment to cyber security"
+      ],
+      "cost": 1300,
+      "priority": "High" 
+    },
+    {
+      "tag": "mitm",
+      "patterns": ["My Login pages appears that dont look legitimate", "Certificate error messages", "how to i prevent a Man in the Middle attack"],
+      "responses": [
+        "Having a strong encryption mechanism on wireless access points prevents unwanted users from joining your network just by being nearby.",
+        "Its essential to make sure your default router login is changed",
+        "VPNs can be used to create a secure environment for sensitive information within a local area network",
+        "Check for proper page authentication",
+        "Implement some sort of tamper detection"
+      ],
+      "cost": 25000,
+      "priority": "High" 
+    },
+    {
+      "tag": "insider",
+      "patterns": ["How do I prevent employees using unauthorized data", "Somebody has logged into my computer", "my files have moved"],
+      "responses": [
+        "implement a system to block and log outgoing emails with sensitive keywords or data patterns",
+        "block the use of unapproved cloud computing services including personal webmail.",
+        "Keeping regular backups, which are only accessible to trusted staff, will reduce this risk.",
+        "Using multi-factor authentication so even if a malicious insider gets hold of a colleague's user id, it is difficult for them to get access to that account to perform malicious actions. "
+      ],
+      "cost": 5500,
+      "priority": "High" 
+    },
+  {
+    "tag": "ransomware",
+    "patterns": ["I have opened a suspicious email", "my file requires a password", "my files have moved", "how do i prevent phishing attacks", "How do I prevent employees clicking on suspicious links"],
+    "responses": [
+      "Never open emails from unknown sources",
+      "Dont ever vist suspicious websites or ones that aren't safe",
+      "Update your devices and turn on automatic updates",
+      "Setup regular backups and restoration testing",
+      "Implement access control",
+      "Never pay a ransom if underattack",
+      "I real email will never ask for your user name, PIN, password or security questions and answers",
+      "Dont click on links in emails or messages, or open attachments, from people or organisations you dont know.",
+      "Use a spam filter to block deceptive messages from even reaching you.",
+      "Understand that your financial institution and other large organisation would never send you a link and ask you to enter your personal or financial details",
+      "Use a spam filter to block deceptive messages from even reaching you."
+    ],
+    "cost": 2500,
+    "priority": "High" 
+  },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful"],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure",
+        "You're welcome"
+      ]
+    },
+    {
+      "tag": "yes",
+      "patterns": ["Yes", "Yea", "Yeah", "Yup", "Ok", "Sure", "Affirmative"],
+      "responses": [
+        "Ok"
+      ]
+    },
+    {
+      "tag": "no",
+      "patterns": ["No", "Nah", "Nope", "Nup", "Negative"],
+      "responses": [
+        "Ok"
+      ]
+    },
+    {
+      "tag": "identify",
+      "patterns": [
+        "What is your name?",
+        "What do I call you?",
+        "Who are you?",
+        "Whare are you called?"
+      ],
+      "responses": [
+        "Hello, I am a chatbot model of Ashwin!",
+        "You can call me Ashwin-Bot!"
+      ]
+    },
+    {
+      "tag": "purpose",
+      "patterns": [
+        "What can you help me with?",
+        "What can you do?",
+        "How can you help me?"
+      ],
+      "responses": ["I can help you with cybersecurity related questions. The questions that I can currently answer include: What are the most serious threats faced by organizations in my industry today? || What are the most serious cyber security threats faced by my business currently?"]
+    },
+    {
+      "tag": "threats",
+      "patterns": [
+        "What are the most serious cyber security threats faced by my business currently?",
+        "Most serious cyber security threats for my business?",
+        "What cyber security threats do I face?",
+        "What are some cyber security threats my business face?"
+      ],
+      "responses": [
+        "First I will need to know more about your current security. What security systems are currently in place?"
+      ]
+    },
+    {
+      "tag": "industry",
+      "patterns": [
+        "What are the most serious threats in my industry",
+        "What are the top 10 cyber security threats my industry",
+        "What do I need to keep an eye out on my industry",
+        "Is my industry in trouble",
+        "What are the most serious threats faced by organizations in my industry today?"
+      ],
+      "responses": [
+        "Perfect, lets take a look into your industry for some recent threats."
+      ]
+    },
+    {
+      "tag": "TLS communication",
+      "patterns": [
+        "TLS communication"
+      ],
+      "responses": 
+        ["Update all connections to TLS 1.3 or 1.2 with ACSC recommended Cyphers."
+      ],
+      "cost": 2000,
+      "priority": "High"
+    },
+    {
+      "tag": "Lack of memory management",
+      "patterns": [
+        "Lack of memory management"
+      ],
+      "responses": 
+        ["Ensure the memory is cleaned at least once a week (Send processes from the memory to the database)"
+      ],
+      "cost": 3000 ,
+      "priority": "Medium"   
+    },
+    {
+      "tag": "Security Misconfiguration",
+      "patterns": [
+        "Security Misconfiguration"
+      ],
+      "responses": 
+        ["1 - Enforce a Content Security Policy (CSP) to only allow content framing from Organisations domain. 2 - Disable X-Frame-Options HTTP headers."
+      ],
+      "cost": 1000,
+      "priority": "Medium"   
+    },
+    {
+      "tag": "Cross Site Request Forgery",
+      "patterns": [
+        "Cross Site Request Forgery"
+      ],
+      "responses": 
+        ["Use a library that uses Anti-CSRF. E.g.: OWASP CSRF Guard."
+      ],
+      "cost": 3500,
+      "priority": "Medium"     
+    },
+    {
+      "tag": "Web Application Input Sanitisation",
+      "patterns": [
+        "Web Application Input Sanitisation"
+      ],
+      "responses": 
+        ["1 - Sanitization of the input fields across the web application  2 - Ensure that all the communication with the APIs go though the WAF  3 - Ensure that all WAF logs are sent to the SIEM solution.  4 - Ensure that queries are created to raise alerts ang generate incidents for any anomalous activity."
+      ],
+      "cost": 2500,
+      "priority": "High" 
+    },
+    {
+      "tag": "Web Application SQL Code Sanitisation",
+      "patterns": [
+        "Web Application SQL Code Sanitisation"
+      ],
+      "responses": 
+        ["1 - Sanitization of the input fields across the web application  2 - Ensure that all the communication with the APIs go though the WAF  3 - Ensure that all WAF logs are sent to the SIEM solution.  4 - Ensure that queries are created to raise alerts ang generate incidents for any anomalous activity."
+      ],
+      "cost": 11000,
+      "priority": "High"
+    },
+    {
+      "tag": "Broken Access Control",
+      "patterns": [
+        "Broken Access Control"
+      ],
+      "responses": 
+        ["1 - Ensure that the backend require user Authentication with MFA for any API request.  2 - Ensure that the backend enforce access control to restrict user to his/her resources  4 - Ensure that all WAF logs are sent to the SIEM solution.  5 - Ensure that queries are created to raise alerts ang generate incidents for any anomalous activity."
+      ],
+      "cost": 1250,
+      "priority": "High"    
+    },
+    {
+      "tag": "Lack of Access Control",
+      "patterns": [
+        "Lack of Access Control"
+      ],
+      "responses": 
+        ["1 - Ensure that the backend require user Authentication with MFA for any API request.  2 - Ensure that the backend enforce access control to restrict user to his/her resources  4 - Ensure that all WAF logs are sent to the SIEM solution.  5 - Ensure that queries are created to raise alerts ang generate incidents for any anomalous activity."
+      ],
+      "cost": 1500,
+      "priority": "High"       
+    },
+    {
+      "tag": "Misconfiguration of Access Control",
+      "patterns": [
+        "Misconfiguration of Access Control"
+      ],
+      "responses": 
+        ["1 - Ensure that the backend require user Authentication with MFA for any API request.  2 - Ensure that the backend enforce access control to restrict user to his/her resources  4 - Ensure that all WAF logs are sent to the SIEM solution.  5 - Ensure that queries are created to raise alerts ang generate incidents for any anomalous activity."
+      ],
+      "cost": 2200,
+      "priority": "High"     
+    },
+    {
+      "tag": "Fuzzing Attack",
+      "patterns": [
+        "Fuzzing Attack"
+      ],
+      "responses": 
+       ["1. Ensure that the WAF is in prevention mode. 2 - Ensure that all WAF logs are sent to the SIEM solution. 3 - Ensure that queries are created to raise alerts ang generate incidents for any anomalous activity."
+      ],
+      "cost": 1750,
+      "priority": "Medium"      
+    },
+    {
+      "tag": "Lack of Multi Factor Authentication",
+      "patterns": [
+        "Lack of Multi Factor Authentication"
+      ],
+      "responses": 
+        ["1 - Ensure that a threshold of 5 failed connections block the account in Keycloack.  2 - Ensure that all Access logs are sent to the SIEM solution.  3 - Ensure that queries are created to raise alerts and generate incidents for any anomalous activity."
+      ],
+      "cost": 250,
+      "priority": "High"    
+    },
+    {
+      "tag": "Broken Keycloack Access Control",
+      "patterns": [
+        "Broken Keycloack Access Control"
+      ],
+      "responses": 
+        ["1 - Ensure that accounts can only be created with a pre-stated configurations  2 - Ensure that the service account used to create users does only have access to the required realm and can only create the user using the pre-stated configuration.  3 - Ensure that all Access logs are sent to the SIEM solution.  4 - Ensure that queries are created to raise alerts and generate incidents for any anomalous activity."
+      ],
+      "cost": 1500,
+      "priority": "High"     
+    },
+    {
+      "tag": "Lack of security configuration",
+      "patterns": [
+        "Lack of security configuration"
+      ],
+      "responses": 
+        ["1 - Ensure that all default accounts have been disabled OR 2 - Ensure that the accounts have MFA enabled  3 - Ensure that all Access logs are sent to the SIEM solution.  4 - Ensure that queries are created to raise alerts and generate incidents for any anomalous activity."
+      ],
+      "cost": 6250,
+      "priority": "High"     
+    },
+    {
+      "tag": "Lack of backup",
+      "patterns": [
+        "Lack of backup"
+      ],
+      "responses": 
+        ["1 - Ensure that the production Storage Account has backup enabled.  2 - Ensure that Defender for Cloud is active in the resource.  3 - Ensure that all Defender for Cloud alerts are sent to the SIEM solution.  4 - Ensure that queries are created to raise alerts and generate incidents for any anomalous activity."
+      ],
+      "cost": 15000,
+      "priority": "High"    
+    },
+    {
+      "tag": "Weak IAM",
+      "patterns": [
+        "Weak IAM"
+      ],
+      "responses": 
+        ["1 - Ensure that all application IDs & Secrets are managed by Key Vault  2 - Ensure that the access to key vault is granted only to required accounts.  3 - Ensure that all Access logs are sent to the SIEM solution.  4 - Ensure that queries are created to raise alerts and generate incidents for any anomalous activity."
+      ],
+      "cost": 1800,
+      "priority": "Medium"    
+    },
+    {
+      "tag": "OWASP 10 common attacks",
+      "patterns": [
+        "OWASP 10 common attacks"
+      ],
+      "responses": 
+        ["1. Ensure that the WAF is in prevention mode.  2 - Ensure that all WAF logs are sent to the SIEM solution.  3 - Ensure that queries are created to raise alerts ang generate incidents for any anomalous activity."
+      ],
+      "cost": 1950,
+      "priority": "High"    
+    },
+    {
+      "tag": "Storage Account Access Management",
+      "patterns": [
+        "Storage Account Access Management"
+      ],
+      "responses": 
+        ["1. Ensure that all service accounts are AAD Managed Identity or Service Principal.  2 - Ensure that all Access logs are sent to the SIEM solution.  3 - Ensure that queries are created to raise alerts and generate incidents for any anomalous activity."
+      ],
+      "cost": 4250,
+      "priority": "High"   
+    },
+    {
+      "tag": "Storage Account Key management",
+      "patterns": [
+        "Storage Account Key management"
+      ],
+      "responses": 
+        ["1 - Ensure that all application IDs & Secrets are managed by Key Vault  2 - Ensure that the access to key vault is granted only to required accounts.  3 - Ensure that all Access logs are sent to the SIEM solution.  4 - Ensure that queries are created to raise alerts and generate incidents for any anomalous activity."
+      ],
+      "cost": 1950,
+      "priority": "High"   
+    },
+    {
+      "tag": "Storage Account object access management",
+      "patterns": [
+        "Storage Account object access management"
+      ],
+      "responses": 
+        ["1. Ensure grant limited access to objects in Azure Storage by using SAS (https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview).  2 - Ensure that all Access logs are sent to the SIEM solution.  3 - Ensure that queries are created to raise alerts and generate incidents for any anomalous activity."
+      ],
+      "cost": 2250,
+      "priority": "High"  
+    },
+    {
+      "tag": "Network Security of Storage Accounts",
+      "patterns": [
+        "Network Security of Storage Accounts"
+      ],
+      "responses": 
+       ["1. Disable public access to the Storage Account.  2. Ensure that only individually dedicated private endpoints are used in the Storage Account..  3 - Ensure that all Access logs are sent to the SIEM solution.  4 - Ensure that queries are created to raise alerts and generate incidents for any anomalous activity."
+      ],
+      "cost": 3550,
+      "priority": "High"   
+    }
+  ]
+}
